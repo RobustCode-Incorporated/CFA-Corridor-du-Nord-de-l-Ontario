@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Membre</title>
+    <link rel="stylesheet" href="membrestyles.css">
+</head>
+<body>
+    <header>
+        <h1>Espace Membre</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="assistant.html">Assistant IA</a></li>
+                <li><a href="membre.html">Espace Membre</a></li>
+                <li><a href="ressources.html">Ressources</a></li>
+                <li><a href="evenements.html">Événements</a></li>
+                <li><a href="temoignages.html">Témoignages</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="membre-section">
+        <!-- Formulaire Inscription -->
+        <div class="form-container">
+            <h3>Inscription</h3>
+            <form>
+                <input type="text" name="nom" placeholder="Nom" required>
+                <input type="text" name="prenom" placeholder="Prénom" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="id_canadien" placeholder="Numéro d'identification canadien" required>
+                <input type="password" name="motdepasse" placeholder="Mot de passe" required>
+                <input type="file" name="documents" placeholder="Téléverser des documents">
+                <button type="submit">S'inscrire</button>
+            </form>
+        </div>
+        
+        <!-- Texte Séparateur (Inscription / Connexion) -->
+        <div class="separator-text">
+            <h2>Inscription et Connexion</h2>
+        </div>
+    
+        <!-- Formulaire Connexion -->
+        <div class="form-container">
+            <h3>Connexion</h3>
+            <form>
+                <input type="text" name="id_canadien" placeholder="Numéro d'identification canadien" required>
+                <input type="password" name="motdepasse" placeholder="Mot de passe" required>
+                <button type="submit">Se connecter</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2025 <a href="https://www.robust-code.com" target="_blank">ROBUST CODE</a>. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

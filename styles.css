@@ -1,0 +1,161 @@
+/* Réinitialisation des marges et styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Styles généraux pour l'en-tête */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* S'étend sur toute la largeur */
+    background-color: none; /* Bleu transparent */
+    color: white;
+    padding: 10px 20px; /* Un peu de padding pour aérer */
+    display: flex;
+    justify-content: space-between; /* Aligne à gauche le titre et à droite la navigation */
+    align-items: center; /* Centrage vertical */
+    z-index: 1000; /* S'assure que la barre de navigation reste au-dessus des autres éléments */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour le titre */
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+/* Styles pour la navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Aligne les éléments du menu horizontalement */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* Animation de survol avec effet de glow */
+nav ul li a:hover {
+    color: #d1e7f4; /* Couleur douce au survol */
+    text-shadow: 0 0 10px #d1e7f4, 0 0 20px #d1e7f4, 0 0 30px #d1e7f4; /* Effet de glow bleu */
+}
+
+/* Styles responsive */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column; /* Passe les éléments du menu en colonne sur petits écrans */
+        align-items: center; /* Centrer les éléments */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+
+/* Background avec effet flou */
+body {
+    background: url('images/pexels-fauxels-3184416.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+/* Overlay sombre pour meilleure lisibilité */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+/* Style du titre principal */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Style du texte de présentation */
+.hero h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#animated-word-container {
+    font-size: 3rem;
+    display: inline-block;
+    position: relative;
+    padding-left: 20px; /* Espacement entre le texte statique et le mot animé */
+}
+
+#static-text, #animated-word {
+    display: inline-block;
+    position: relative;
+    opacity: 0; /* Les deux textes commencent invisibles */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Transition de l'opacité et du mouvement */
+}
+
+#static-text {
+    color: white; /* Couleur pour la phrase statique */
+    transform: translateY(-30px); /* Position initiale du texte statique en haut */
+}
+
+#animated-word {
+    color: #ffcc00; /* Couleur pour les mots animés */
+    transform: translateY(30px); /* Position initiale du mot animé en bas */
+}
+
+/* Style pour le footer */
+.footer {
+    text-align: center;
+    padding: 0.5rem;
+    border-top: 1px solid ;
+    font-family: 'Audiowide', 'Orbitron', sans-serif; /* Police de ROBUST CODE */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Pour s'assurer que le footer s'étend sur toute la largeur de la page */
+}
+
+/* Style pour le lien dans le footer */
+.footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Effet de survol pour le lien */
+.footer a:hover {
+    color: #d1e7f4; /* Couleur douce au survol */
+    text-shadow: 0 0 10px #d1e7f4, 0 0 20px #d1e7f4, 0 0 30px #d1e7f4; /* Effet de glow bleu */
+}
