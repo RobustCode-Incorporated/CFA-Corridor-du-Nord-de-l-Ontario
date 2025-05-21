@@ -197,3 +197,47 @@ body::before {
     color: #d1e7f4; /* Couleur douce au survol */
     text-shadow: 0 0 10px #d1e7f4, 0 0 20px #d1e7f4, 0 0 30px #d1e7f4; /* Effet de glow bleu */
 }
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 1001;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    nav ul li a:hover {
+        color: #d1e7f4;
+        text-shadow: 0 0 10px #d1e7f4, 0 0 20px #d1e7f4, 0 0 30px #d1e7f4;
+    }
+
+    .resources-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .resource-section {
+        width: 80%;
+    }
+}

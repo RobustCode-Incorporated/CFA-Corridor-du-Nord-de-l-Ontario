@@ -22,7 +22,11 @@
             </ul>
         </nav>
     </header>
-
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
     <section class="hero">
         <div id="animated-word-container">
             <span id="static-text">Bienvenue dans le portal qui vous facilite: </span><span id="animated-word"> </span>
@@ -33,5 +37,10 @@
     <footer class="footer">
         <p>&copy; 2025 <a href="https://www.robust-code.com" target="_blank">ROBUST CODE</a>. All rights reserved.</p>
     </footer>
+    <script>
+        function toggleMenu() {
+            document.querySelector('nav ul').classList.toggle('show');
+        }
+    </script>
 </body>
 </html>
